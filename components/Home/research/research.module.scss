@@ -1,0 +1,165 @@
+$mobile: 768px;
+.container {
+  display: none;
+  background-color: #1a1d2c;
+  background: url("/images/Background2.png") center center;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 8rem;
+  @media all and (max-width: $mobile) {
+    padding: 0 2em;
+    margin-bottom: 2 em;
+  }
+}
+
+.head {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  @media all and (max-width: $mobile) {
+    padding-top: 0;
+    font-size: 3.2em;
+  }
+}
+
+.subTitle {
+  color: white;
+  text-align: center;
+  margin: 10px 0px 20px 0px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: none;
+  @media all and (max-width: $mobile) {
+    font-size: 1.2em;
+  }
+}
+
+.wrap {
+  margin-bottom: 50px;
+  @media all and (max-width: $mobile) {
+    margin-bottom: 2em;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  // margin: 0px 165px;
+  @media all and (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+// .row > div {
+//   width: 235px;
+//   height: 215px;
+//   margin: 10px;
+// }
+
+#content {
+  width: 235px;
+  height: 240px;
+  margin: 10px;
+  padding: 1.5rem;
+}
+
+#content:nth-child(1),
+#content:nth-child(3) {
+  background-color: #0099dc;
+}
+
+#content:nth-child(2),
+#content:nth-child(4) {
+  background-color: #0451d5;
+}
+
+#image {
+  width: 235px;
+  height: 230px;
+  margin: 10px;
+}
+#image > img {
+  width: 235px;
+  height: 230px;
+}
+
+.upper {
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 0px 10px;
+}
+
+.upper > img {
+  height: 55%;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.number {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+hr.bar {
+  border: 3px solid white;
+  width: 40px;
+  margin: 0;
+}
+
+.lower {
+  color: white;
+  margin: 0 10px 10px 10px;
+}
+
+.lower > p {
+  font-size: 10px;
+  font-weight: 100;
+  text-transform: none;
+  width: 160px;
+  margin: 0;
+  text-align: left;
+}
+
+.lower > h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.button {
+  // display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border: 1px solid white;
+  width: 15em;
+  margin: auto;
+
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: #0099dc;
+    text-decoration: none;
+  }
+  @media all and (max-width: $mobile) {
+    // display: none;
+    width: 15em;
+  }
+}

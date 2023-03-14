@@ -1,0 +1,307 @@
+$mobile: 768px;
+$laptop: 1024px;
+$laptop_l: 1440px;
+
+.container {
+    background: url("/images/Background2.png") center center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    @media all and (max-width: $mobile) {
+        height: auto;
+        padding: 6em 0;
+    }
+}
+
+.mainContainer {
+    // width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 1rem;
+    // margin-left: 5rem;
+    h1 {
+        font-size: 4rem;
+        border-right: 2px solid white;
+        padding-right: 2rem;
+        text-transform: uppercase;
+    }
+    div {
+        padding-left: 1rem;
+        width: 100px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.4);
+    }
+    @media all and (max-width: $mobile) {
+        position: relative;
+        margin: 0;
+        bottom: 0;
+        display: block;
+        h1 {
+            border: 0px;
+        }
+        div {
+            padding: 0px;
+        }
+    }
+}
+
+.heading h1 {
+    margin: auto;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: right;
+    @media all and (max-width: $mobile) {
+        width: 80vw;
+        text-align: center;
+        font-size: 3.2em;
+        margin-bottom: 1.5em;
+    }
+}
+
+.mainContainer div {
+    width: 70rem;
+    margin-left: 2rem;
+    @media all and (max-width: $mobile) {
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+.buttom {
+    margin-top: 4rem;
+    text-align: right;
+    @media all and (max-width: $mobile) {
+        text-align: center;
+    }
+}
+
+.buttom button {
+    border: 1px solid #e5ecfc;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 5rem;
+    font-weight: 600;
+}
+
+.buttom button:focus {
+    outline: none;
+}
+
+.contentBody p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: right;
+    @media all and (max-width: $mobile) {
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0 2em;
+    }
+}
+
+// New Hero CSS
+.hero {
+    height: auto;
+    color: white;
+    font-weight: 400;
+    // background: url(../../../public/images/hero_banner.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+.hero_row {
+    background: #0D58D3;
+
+    // @media all and (min-width: $laptop) {
+    //   height: 600px;
+    // }
+}
+
+.hero_info {
+  padding: 20px;
+  text-align: left;
+  display: block;
+
+  @media all and (min-width: $mobile) {
+    padding: 30px;
+    margin: auto;
+  }
+  @media all and (min-width: $laptop) {
+    padding: 50px;
+  }
+}
+
+.hero_img {
+  width: 100%;
+  display: none;
+  object-fit: contain;
+
+  @media all and (min-width: $mobile) {
+    display: block;
+    height: 100%;
+  }
+}
+
+.hero_heading {
+  width: 95%;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 300;
+
+  font-family: "Montserrat", sans-serif;
+  @media all and (min-width: $mobile) {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  @media all and (min-width: $laptop) {
+    font-size: 62px;
+    line-height: 68px;
+  }
+  @media all and (min-width: $laptop_l) {
+    font-size: 68px;
+    line-height: 72px;
+  }
+}
+
+.hero_details {
+    font-size: 16px;
+    margin: 30px 0px;
+    font-weight: 200;
+
+    @media all and (min-width: $mobile) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    @media all and (min-width: $laptop) {
+      font-size: 22px;
+      line-height: 32px;
+    }
+}
+
+.hero_btn {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  background: #001840;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+
+  @media all and (min-width: $laptop) {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
+  @media all and (min-width: $laptop_l) {
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+
+// HERO VIDEO
+.hero_video_container {
+  background: #E2F0F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_video {
+  width: 100%;
+  // padding-bottom: calc(var(--aspect-ratio, .5625) * 30%);
+  padding: 0px 5%;
+  margin-block: 20px;
+  // border: 2px solid #001840;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 0.3em;
+
+  @media all and (min-width: $mobile) {
+    height: 500px;
+    // padding: 50px 30px;
+  }
+  @media all and (min-width: $laptop) {
+    height: 700px;
+  }
+  @media all and (min-width: $laptop_l) {
+    height: 600px;
+  }
+}
+
+
+// NEW AN ASPIRING LEADER CSS
+
+.IntelsenseAI_a_cover {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  @media all and (min-width: $mobile) {
+    height: 350px
+  }
+  @media all and (min-width: $laptop_l) {
+    height: 500px
+  }
+  .IntelsenseAI_a_cover_image {
+    width: 100%;
+    height: 100%;
+  }
+  .IntelsenseAI_a_cover_info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(13, 88, 211, 0.6);
+    backdrop-filter: blur(2px);
+    
+    @media all and (min-width: $mobile) {
+      padding: 30px
+    }
+    .IntelsenseAI_a_cover_info_title {
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+      @media all and (min-width: $mobile) {
+        font-size: 32px;
+      }
+      @media all and (min-width: $laptop) {
+        font-size: 42px;
+      }
+      @media all and (min-width: $laptop_l) {
+        font-size: 62px;
+      }
+    }
+    .IntelsenseAI_a_cover_info_subtitle {
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      font-weight: 400;
+      opacity: .9;
+      @media all and (min-width: $mobile) {
+        font-size: 18px;
+        padding: 0px 20%;
+      }
+      @media all and (min-width: $laptop) {
+        font-size: 22px;
+      }
+      @media all and (min-width: $laptop_l) {
+        font-size: 28px;
+      }
+    }
+  }
+}

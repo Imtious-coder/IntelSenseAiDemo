@@ -1,0 +1,225 @@
+$mobile: 768px;
+$laptop: 1200px;
+$tablet: 992px;
+$white: #ffffff;
+$black: #000000;
+$bg: #18b9fe;
+.container {
+    background: $white;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 80px;
+    @media all and (max-width: $mobile) {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    // box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media all and (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.NavbarMobile {
+    display: none;
+    @media all and (max-width: $mobile) {
+        display: block;
+    }
+}
+
+.logo {
+  max-width: 200px;
+  height: 35px;
+  line-height: 100px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+// .navbar_brand {
+//     margin: 0;
+//     font-size: 2rem;
+//     color: $black;
+//     line-height: 100px;
+//     &:hover {
+//         transition: transform 2s;
+//         transform: rotate(360deg);
+//         text-shadow: 0px 0px 5px rgb(0, 97, 136);
+//         cursor: pointer;
+//     }
+//     @media all and (max-width: $laptop) {
+//         font-size: 1.5rem;
+//     }
+//     @media all and (max-width: $tablet) {
+//         font-size: 1.2rem;
+//     }
+// }
+
+.NavItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 80px;
+    margin: 0;
+    padding: 0;
+    @media all and (max-width: $laptop) {
+        font-size: 1rem;
+    }
+}
+
+.NavItems li {
+    margin: 0 10px;
+    cursor: pointer;
+    @media all and (max-width: $tablet) {
+        margin: 0px 5px;
+    }
+}
+
+.NavItems li small,
+.NavItems li a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  &:hover {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #6cc5ed;
+    transition: all 0.3s;
+    color: #6cc5ed;
+  }
+  &:focus{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #6cc5ed;
+    color: $black;
+  }
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   width: 0;
+    //   height: 2px;
+    //   background: #6cc5ed;
+    //   transition: width 0.2s;
+    // }
+    // &:hover {
+    //   color: #3a87aa;
+    //   transition: color 0.2s;
+    //   &::after {
+    //     width: 100%;
+    //     transition: width 0.2s;
+    //   }
+    // }
+}
+
+.NavItems li a.activeLink {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #6cc5ed;
+    color: #3a87aa;
+    }
+}
+
+// .NavItems li a:hover {
+// 	text-decoration: none;
+// 	color: #6cc5ed;
+// }
+.search {
+  margin-right: 20px;
+  position: relative;
+}
+
+.searchInput {
+  border-radius: 20px;
+  height: 30px;
+  outline: 0;
+  padding-left: 38px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 160px;
+  border: 1px solid #6cc5ed;
+}
+
+.searchInput::placeholder {
+  color: #6cc5ed;
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+}
+
+.searchInput:-ms-input-placeholder {
+  color: #6cc5ed;
+  /* Internet Explorer 10-11 */
+}
+
+.searchInput::-ms-input-placeholder {
+  color: #6cc5ed;
+  /* Microsoft Edge */
+}
+
+.searchIcon {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  margin-left: 15px;
+  position: absolute;
+}
+
+// MEGA MENUE CSS
+
+
+.Megamenue {
+  height: auto;
+  display: none;
+  background: white;
+  padding: 40px 10px;
+  position: absolute;
+  left: 20%;
+  top: 80px;
+  margin: auto;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 5px 10px rgb(109, 109, 109);
+  width: 60%;
+  cursor: auto;
+  img {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    box-shadow: 0px 2px 10px rgb(196, 196, 196);
+  }
+  .Megamenue_a {
+    display: block;
+    margin-top: 0px!important;
+    padding: 0!important;
+    border: none!important;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      color: #6CC5ED;
+    }
+  }
+  .Megamenue_p {
+    line-height: 21px;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: .7;
+    cursor: auto;
+  }
+}
+
+.Products:hover .Megamenue{
+  display: block;
+}

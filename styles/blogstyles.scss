@@ -1,0 +1,129 @@
+$mobile: 768px;
+.blogContainer {
+  background-color: #1e1f2e;
+}
+.section1 {
+  //min-height: 50vh;
+  background-image: url("/images/blog/background.webp");
+  background-color: #1e1f2e;
+  background-position: center;
+  background-size: cover;
+  .title {
+    //position: absolute;
+    //right: 20vh;
+    //top: 30vh;
+  }
+
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15rem;
+  padding-bottom: 25rem;
+  .titleLine1 {
+    font-size: 2.9rem;
+    font-weight: bold;
+  }
+  .titleLine2 {
+    font-size: 2.9rem;
+  }
+  .titleLine3 {
+    font-size: 7.6rem;
+    font-weight: bold;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      list-style: none;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.section2 {
+  border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+  // border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+  margin: 4rem 5%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  .featured {
+    text-align: center;
+    color: #fff;
+    background-color: #1e1f2e;
+    display: flex;
+    flex-direction: column;
+    .featuredIntro {
+      margin-bottom: 2rem;
+    }
+    .t1 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .t2 {
+      color: #0099dc;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .t3 {
+      margin: auto;
+      font-size: 1.4rem;
+      font-weight: 300;
+      max-width: 50rem;
+    }
+    .t4 {
+      font-size: 2rem;
+    }
+    .t5 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    .featuredTop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+        max-width: 48rem;
+      }
+    }
+    .featuredBottom {
+      margin-top: 2rem;
+      .featuredButton {
+        margin-top: 2rem;
+        margin-bottom: 9rem;
+        padding: 0.8rem 5rem;
+        text-transform: uppercase;
+        background-color: #0099dc;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-radius: 3rem;
+        transition: background-color 0.5s ease;
+      }
+      .featuredButton:hover {
+        cursor: pointer;
+        background-color: rgba($color: #0099dc, $alpha: 0.85);
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.card-box-container {
+  background-color: white;
+  min-height: 500px;
+
+  .card-box {
+    transform: translateY(-5%);
+  }
+}

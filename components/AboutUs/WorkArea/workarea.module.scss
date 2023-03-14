@@ -1,0 +1,109 @@
+$mobile: 768px;
+
+.wrapper {
+  background-color: #1e1f2e;
+  color: #dddddf;
+  padding: 10rem 0;
+}
+
+.line {
+  width: 90%;
+  max-width: 1920px;
+  margin: auto;
+  border-bottom: 1.5px solid #eee;
+}
+
+.mainContent {
+  width: 90%;
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 10rem 0;
+  @media all and (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.leftPart {
+  width: 33%;
+  margin-right: 4rem;
+  @media all and (max-width: $mobile) {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.leftPart h6,
+.rightPart h6 {
+  color: #528dad;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  @media all and (max-width: $mobile) {
+    font-size: 1.3rem;
+  }
+}
+
+.leftPart p,
+.rightPart p {
+  font-weight: 300;
+  font-size: 1.8rem;
+  // font-weight: 500;
+  text-align: justify;
+  @media all and (max-width: $mobile) {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+.leftPart img {
+  width: 50px;
+  @media all and (max-width: $mobile) {
+    width: 8rem;
+  }
+}
+
+.middlePart {
+  margin-left: 3px;
+  @media all and (max-width: $mobile) {
+    margin: 0;
+  }
+}
+
+.middlePart img {
+  width: 324px;
+  @media all and (max-width: $mobile) {
+    width: 25rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.rightPart {
+  width: 33%;
+  margin-top: auto;
+  padding-left: 4rem;
+  @media all and (max-width: $mobile) {
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    p {
+      font-weight: 200;
+      text-align: center;
+    }
+  }
+}
+
+.rightPart img {
+  width: 50px;
+  @media all and (max-width: $mobile) {
+    width: 7.5rem;
+  }
+}

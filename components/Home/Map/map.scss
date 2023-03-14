@@ -1,0 +1,93 @@
+.map-container {
+  //   margin: 5em 0em !important;
+  width: 80%;
+  display: flex;
+  color: black;
+  //   background-color: #1e1f2e;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4rem;
+  margin-top: 4em;
+  //   background-color: red;
+
+  @media only screen and (max-width: 786px) {
+    & {
+      width: auto;
+      display: block;
+      padding: 0px;
+    }
+
+    img {
+      padding: 1rem !important;
+    }
+  }
+
+  p {
+    color: black;
+    font-size: 1.6em;
+    padding-bottom: 1em;
+  }
+
+  .talentedPeople {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 786px) {
+      & {
+        display: block;
+      }
+    }
+
+    ul {
+      list-style: none;
+      color: #000;
+      font-size: 1.4em;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      // margin-left: 1em;
+
+      li {
+        //   display: flex;
+
+        flex-basis: 50%;
+        font-weight: 500;
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  $wt: 500px;
+  $ht: $wt * (9/16);
+
+  .imgwrapper {
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding: 4rem;
+    img {
+      // background-color: red;
+      width: 100%;
+      // height: $ht;
+
+      object-fit: contain;
+    }
+  }
+
+  h2 {
+    color: #0099dc;
+    font-size: 3em;
+  }
+
+  .content {
+    flex-basis: 50%;
+    flex-grow: 0;
+    // background-color: hotpink;
+    border-left: 3px solid #0099dc;
+    line-height: 1.7;
+    padding: 2rem;
+    // width: 60%;
+  }
+}

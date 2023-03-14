@@ -1,0 +1,60 @@
+$mobile: 480px;
+
+.careers__our--teams--bottom {
+	display: flex;
+	width: 90%;
+	margin: auto;
+
+	@media all and (max-width: $mobile) { 
+		flex-direction: column;	
+			
+	}
+
+	&-content {
+		width: 20%;
+		margin: auto;
+		@media all and (max-width: $mobile) { 
+			width: 100%;	
+		}
+
+		h2 {
+			font-size: 2.5rem;
+			font-weight: 700;
+		}
+
+		&-img {
+			width: 100%;
+
+			img {
+				width: 200px;
+				height: 150px;
+				object-fit: contain;
+			}
+
+			p {
+				width: 200px;
+				font-size: 1.3rem;
+				text-align: justify;
+			}
+		}
+
+		&-links {
+			width: 200px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 2.5rem;
+
+			a {
+				font-size: 1rem;
+				font-weight: 500;
+
+				&:first-child {
+					background-color: #0152d6;
+					padding: 0.5rem 1rem;
+					border-radius: 20rem;
+				}
+			}
+		}
+	}
+}

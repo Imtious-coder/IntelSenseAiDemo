@@ -1,0 +1,181 @@
+@mixin mobile() {
+  @media only screen and (max-width: 588px) {
+    @content;
+  }
+}
+
+
+.container {
+  padding-block: 2rem;
+  background-color: #0099dc;
+  background-image: url("/images/background-vector.png");
+}
+
+.svgContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem 0rem;
+
+  img {
+    width: 60%;
+
+    @include mobile() {
+      width: 100%;
+    }
+  }
+
+}
+
+.header {
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+  padding: 30px 0px;
+  padding-block: 1rem;
+
+  @include mobile() {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+.header > img {
+  width: 300px;
+  height: 100%;
+  margin-right: 20px;
+
+  @include mobile() {
+    width: 200px;
+  }
+}
+
+.header > h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hexagonGrid {
+  margin: 10px 150px;
+  padding-bottom: 40px;
+}
+
+.hex_grid__list {
+  --amount: 5;
+  --counter: 1;
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(var(--amount), 1fr, 2fr) 1fr;
+  grid-gap: 2rem 4rem;
+}
+.hex_grid__item {
+  position: relative;
+  grid-column: 1 / span 3;
+  grid-row: calc(var(--counter) + var(--counter)) / span 2;
+  height: 0;
+  padding-bottom: 90%;
+}
+
+.hex_grid__item:nth-of-type(5n + 2) {
+  grid-column: 3 / span 3;
+  grid-row: calc(var(--counter) + var(--counter) - 1) / span 2;
+}
+.hex_grid__item:nth-of-type(5n + 3) {
+  grid-column: 5 / span 3;
+}
+.hex_grid__item:nth-of-type(5n + 4) {
+  grid-column: 7 / span 3;
+  grid-row: calc(var(--counter) + var(--counter) - 1) / span 2;
+}
+.hex_grid__item:nth-of-type(5n + 5) {
+  grid-column: 9 / span 3;
+}
+.hex_grid__item:nth-of-type(n + 6) {
+  --counter: 2;
+}
+
+.hex_grid__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #6cc6ee;
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  padding: 25px;
+  text-align: center;
+}
+
+.hex_grid__content > h1 {
+  color: #0099dc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 0px;
+}
+
+.hex_grid__content > h4 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.hex_grid__content > img {
+  width: 40%;
+  padding: 0px;
+}
+
+.hex_grid__content > p {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 1920px) {
+  .hexagonGrid {
+    margin: 10px 300px;
+    padding-bottom: 40px;
+  }
+
+  .hex_grid__list {
+    grid-gap: 1rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .hexagonGrid {
+    margin: 10px 300px;
+    padding-bottom: 40px;
+  }
+
+  .hex_grid__list {
+    grid-gap: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .hexagonGrid {
+    margin: 10px 200px;
+    padding-bottom: 40px;
+  }
+
+  .hex_grid__list {
+    grid-gap: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hexagonGrid {
+    margin: 10px 100px;
+    padding-bottom: 40px;
+  }
+
+  .hex_grid__list {
+    grid-gap: 1rem 2rem;
+  }
+}

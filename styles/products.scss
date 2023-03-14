@@ -1,0 +1,132 @@
+$text-color-white: white;
+$width: 250px;
+$height: $width * (9/16);
+$logo-blue: #6cc5ed;
+$dark: #1e1f2e;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.youtube-player {
+  min-height: 200px;
+
+  @media only screen and (min-width: 700px) {
+    min-height: 370px;
+  }
+}
+
+.player-wrapper {
+  width: 100%; // Reset width
+  height: 100%; // Reset height
+}
+
+.react-player {
+  padding-top: 56.25%; // Percentage ratio for 16:9
+  position: relative; // Set to relative
+}
+
+.detailed-container {
+  margin: auto;
+  width: 80%;
+  padding: 5rem;
+  margin-top: 6rem;
+  // box-shadow: 0px 1px 5px rgba($color: #000000, $alpha: 0.3);
+
+  @media only screen and (max-width: 700px) {
+    width: 90%;
+    padding: 0px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.prod-header {
+  background-color: $dark;
+  display: flex;
+  justify-content: center;
+  padding-block: 5rem;
+}
+
+.prod-container {
+  background-color: #fff;
+  font-size: 1.4rem;
+  color: white;
+  padding-bottom: 2em;
+  margin: auto;
+  // display: flex;
+  // justify-content: center;
+
+  .detailed-product-container {
+    display: flex;
+    color: $dark;
+    margin: 4rem 0rem;
+
+    @media only screen and (max-width: 600px) {
+      display: block;
+    }
+
+    font-family: "Roboto Condensed", sans-serif;
+
+    font-weight: 700;
+
+    div {
+      padding: 0.5rem;
+      width: 100%;
+    }
+
+    h1 {
+      cursor: pointer;
+    }
+
+    .desc {
+      padding: 0.5rem;
+      font-family: Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  .each-prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .prod-each {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    // margin-bottom: 6em;
+    // background-color: $logo-blue;
+
+    .prod-logo-container {
+      height: 18rem;
+      width: 25rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      img {
+        padding: 2rem;
+        color: $dark;
+      }
+    }
+
+    div {
+      font-size: 12px;
+      font-family: Montserrat, serif;
+      width: 38rem;
+      padding: 0.5rem 0rem;
+      color: $dark;
+      text-align: center;
+    }
+  }
+}
+
+.acc-header {
+  cursor: pointer;
+  border-bottom: 1px solid $logo-blue;
+}

@@ -1,0 +1,223 @@
+$mobile: 768px;
+
+.container {
+  .intro {
+    padding: 0 5%;
+
+    h2 {
+      margin-top: 6rem;
+      color: #0099dc;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 2.2rem;
+      @media all and (min-width: $mobile) {
+        font-size: 2.4rem;
+        margin-bottom: 5rem;
+      }
+    }
+
+    q {
+      max-width: 22.5rem;
+      margin: auto;
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.8rem;
+      @media all and (min-width: $mobile) {
+        max-width: none;
+        font-size: 4rem;
+      }
+    }
+
+    .author {
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+      @media all and (min-width: $mobile) {
+        margin-bottom: 10rem;
+        font-size: 2.4rem;
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      @media all and (min-width: $mobile) {
+        font-size: 2.4rem;
+      }
+    }
+
+    button {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      outline: inherit;
+      background: none;
+      border: none;
+      font: inherit;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: inherit;
+      cursor: pointer;
+      border: 1px solid #fff;
+      border-radius: 2.5rem;
+      padding: 0.5rem 2rem;
+      @media all and (min-width: $mobile) {
+        font-size: 2rem;
+        padding: 0.5rem 4rem;
+        margin-bottom: 10rem;
+      }
+    }
+  }
+
+  .caseItem {
+    width: 8rem;
+    background-color: #0152d6;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 2px;
+    margin-bottom: 3px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    @media all and (min-width: $mobile) {
+      font-size: 2.2rem;
+      width: 20rem;
+      text-transform: capitalize;
+      border-radius: 2rem;
+      margin: 0.5rem 0.4rem;
+    }
+  }
+
+  .section2 {
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    @media all and (min-width: $mobile) {
+      border: none;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #0099dc;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 2.2rem;
+      @media all and (min-width: $mobile) {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+      }
+    }
+    .cases {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      @media all and (min-width: $mobile) {
+        margin-bottom: 10rem;
+      }
+    }
+    .caserow {
+      margin: auto;
+      max-width: 30rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      @media all and (min-width: $mobile) {
+        max-width: none;
+      }
+    }
+    .secondColor {
+      background-color: #6cc5ed;
+    }
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width: $mobile) {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .projectContainer {
+      border-bottom: 1px solid #707070;
+      @media all and (min-width: $mobile) {
+        border: none;
+      }
+    }
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 26rem;
+  margin: auto;
+  margin-top: 2rem;
+  @media all and (min-width: $mobile) {
+    margin: 2rem;
+  }
+  img {
+    margin: auto;
+    width: 80%;
+    max-width: 22rem;
+    height: auto;
+  }
+  h2 {
+    margin-top: 1rem;
+    color: #0099dc;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .details {
+    font-size: 1.2rem;
+  }
+  button {
+    outline: inherit;
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: inherit;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 2.5rem;
+    max-width: 16rem;
+    margin: 2rem auto;
+    padding: 0.5rem 2rem;
+  }
+}
+
+.last {
+  background-color: #0099dc;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  .lastTitle {
+    margin: auto;
+    width: 80%;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    @media all and (min-width: $mobile) {
+      font-size: 4.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .lastDetail {
+    margin: auto;
+    font-size: 1.2rem;
+    width: 70%;
+    @media all and (min-width: $mobile) {
+      font-size: 1.8rem;
+    }
+  }
+}

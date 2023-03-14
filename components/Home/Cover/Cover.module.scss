@@ -1,0 +1,92 @@
+$mobile: 768px;
+
+.rec .rec-slider-container {
+  margin: 0px !important;
+}
+
+// .imakzv {
+//   overflow: hidden;
+//   position: relative;
+//   width: 100%;
+//   margin: 0px !important;
+// }
+
+.container {
+  text-align: center;
+}
+.mainContainer {
+  background: url("/images/background.png") center center;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: white;
+  align-items: center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.heading h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  margin-top: 14rem;
+  @media all and (max-width: $mobile) {
+    padding-top: 3em;
+    font-size: 3.2em;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.heading h5 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  @media all and (max-width: $mobile) {
+    font-size: 1.2em;
+    margin-top: 1em;
+    letter-spacing: 1px;
+  }
+}
+
+.contentBody {
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  font-size: 1.4rem;
+  @media all and (max-width: $mobile) {
+    margin-top: 1em;
+    width: 80%;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+.buttom {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.buttom button {
+  border: 1px solid #e5ecfc;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  text-align: center;
+  height: 40px;
+  width: 196px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  @media all and (max-width: $mobile) {
+    font-size: 1.2em;
+    width: 12em;
+    height: 2.5em;
+  }
+}
+.buttom button:focus {
+  outline: none;
+}

@@ -1,0 +1,49 @@
+$mobile: 768px;
+.content {
+  background-color: #1e1f2e;
+  color: #fff;
+
+  .line {
+    border-bottom: 1.5px solid #eee;
+    width: 90%;
+    max-width: 1920px;
+    margin: auto;
+    padding-top: 4rem;
+  }
+
+  .container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .heading {
+      color: #5899bb;
+      font-weight: 500;
+      font-size: 3rem;
+      padding-bottom: 3rem;
+      @media all and (max-width: $mobile) {
+        font-size: 1.3rem;
+      }
+    }
+
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    .secondary {
+      width: 55%;
+      margin: auto;
+      font-size: 3.5rem;
+      // text-align: justify !important;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 4rem;
+      @media all and (max-width: $mobile) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

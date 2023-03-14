@@ -1,0 +1,116 @@
+@mixin mobile() {
+  @media only screen and (max-width: 588px) {
+    @content;
+  }
+}
+
+
+.mainSection {
+  background-color: white;
+}
+
+.circleImg {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 2rem 0px;
+}
+
+.main {
+  background-color: #0099dc;
+  // padding: 10px 0px;
+}
+
+.partnerWrapper {
+  display: flex;
+  background-color: white;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0em;
+  width: 100%;
+
+  @include mobile() {
+    flex-direction: column;
+  }
+}
+
+.partner {
+  background-color: white;
+  height: 220px;
+  margin-top: 50px;
+  padding: 20px 100px;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.partner > h2 {
+  text-align: center;
+  color: #0099dc;
+  padding: 0px;
+  margin: 0px;
+}
+
+.company {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // background-color: #e2f4fc;
+  padding-top: 10px;
+  padding-bottom: 64px;
+
+  // flex-wrap: wrap;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    padding: 1em 0em;
+  }
+}
+
+.comLogo {
+  // display: flex;
+  // align-self: center;
+  // flex-basis: 20%;
+}
+
+.comLogo > img {
+  width: 100px;
+  // height: 30px;
+  // padding:1em;
+}
+
+.middle {
+  margin-top: 60px;
+  border: 1px solid white;
+  text-align: center;
+
+  padding: 20px 0px;
+  border-radius: 50px;
+  margin: 50px 90px;
+}
+
+.middle > h2 {
+  color: white;
+}
+
+.middle > p {
+  color: white;
+  font-family: "Montserrat-Light";
+}
+
+.middle > a {
+  color: white;
+  font-family: "Montserrat-Light";
+  padding: 5px 50px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.middle > a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

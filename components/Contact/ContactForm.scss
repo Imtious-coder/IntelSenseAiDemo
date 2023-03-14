@@ -1,0 +1,213 @@
+@mixin mobile() {
+  @media only screen and (max-width: 588px) {
+    @content;
+  }
+}
+
+.content {
+  width: 100%;
+  color: white;
+  margin-bottom: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+  background: url("/images/WhiteLogoAsset2.png") center center;
+  background-size: cover;
+  height: 45vh;
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 8rem 6rem;
+
+    @include mobile() {
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+
+      @include mobile() {
+        font-size: 2rem;
+      }
+    }
+
+    &--author {
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    &--choice {
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding-top: 2rem;
+    }
+
+    h4 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-align: center;
+
+      @include mobile() {
+        font-size: 2rem;
+        padding: 4rem 0rem;
+      }
+    }
+  }
+
+  &__form {
+    position: absolute;
+    right: 12rem;
+    top: 3rem;
+    width: 35%;
+    padding: 6.5rem 0rem;
+
+    @include mobile() {
+      position: unset;
+      top: 0rem;
+      right: 0rem;
+      width: 100%;
+    }
+
+    background-color: white;
+    text-align: center;
+    color: #0099dc;
+    -webkit-box-shadow: 6px 6px 2rem rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 6px 6px 2rem rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+
+    h3 {
+      color: #0253d6;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding-bottom: 3rem;
+      letter-spacing: 1px;
+      font-size: 16px;
+    }
+
+    form {
+      width: 90%;
+      margin: auto;
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea,
+      .PhoneInputInput {
+        font-family: "Montserrat", sans-serif;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #6cc6ee;
+        margin-bottom: 2.5rem;
+        padding: 1rem 0 1rem 1rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        -moz-appearance: none; /* Firefox */
+        -webkit-appearance: none; /* Safari and Chrome */
+        appearance: none;
+      }
+
+      .PhoneInputCountry {
+        border: none;
+        border-bottom: 1px solid #6cc6ee;
+        margin-bottom: 2.5rem;
+        padding: 0 0 1rem 1rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .checkBox {
+        display: flex;
+        justify-content: center;
+
+        input[type="checkbox"] {
+          margin-right: 1.5rem;
+        }
+
+        .label {
+          text-align: left;
+          color: #a09b9b;
+        }
+      }
+
+      button {
+        margin-top: 4rem;
+        background-color: #005ccb;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  background-color: white;
+  padding-bottom: 27px;
+}
+
+.location {
+  display: flex;
+  color: black;
+  width: 50%;
+  margin-left: 7rem;
+  margin-top: 3rem;
+  border-top: 1rem solid #7fcdf0;
+  -webkit-box-shadow: 6px 6px 2rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 6px 6px 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.location img:first-child {
+  width: 40%;
+  height: 300px;
+  // object-fit: cover;
+}
+
+.location img:last-child {
+  width: 7%;
+  height: 300px;
+  margin-left: 5rem;
+}
+
+.card-heading {
+  width: 30%;
+  text-align: right;
+  margin-left: 2rem;
+  margin-top: 8rem;
+
+  h4 {
+    color: #1e1f2e;
+    text-align: right;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  p {
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #4e4e4e;
+    font-size: 1.3rem;
+  }
+}

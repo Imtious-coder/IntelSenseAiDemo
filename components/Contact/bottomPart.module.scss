@@ -1,0 +1,71 @@
+.outerDiv {
+  margin: 20px 25px;
+  padding-left: 185px;
+  padding-right: 141px;
+  -webkit-box-shadow: 1px 5px 34px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 1px 5px 34px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 5px 34px 1px rgba(0, 0, 0, 0.6);
+}
+
+.outerDiv > hr {
+  border: 1px solid #6cc5ed;
+}
+
+.logo {
+  max-width: 200px;
+  height: 35px;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex: wrap;
+}
+
+.listItem {
+  margin-right: 20px;
+}
+
+.listItem > p {
+  color: #6cc5ed;
+  font-size: 15px;
+}
+
+.varLine {
+  border-left: 1px solid #6cc5ed;
+  float: left;
+}
+
+.ulList {
+  padding-left: 10px;
+}
+
+.ulList > li {
+  list-style: none;
+  color: #999999;
+  font-size: 12px;
+  margin: 10px 0px;
+}
+
+.footerText {
+  margin-left: auto;
+  color: #999999;
+  margin-top: 35px;
+  text-align: right;
+}
+
+.link {
+  display: flex;
+  flex: wrap;
+}
+
+.link > a {
+  margin: 0px 10px;
+  text-transform: uppercase;
+  color: #6cc5ed;
+}
+
+.link > a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}

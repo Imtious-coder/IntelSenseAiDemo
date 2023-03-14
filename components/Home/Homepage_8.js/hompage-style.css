@@ -1,0 +1,87 @@
+.wrapper {
+    width: 100%;
+}
+
+.top {
+    width: 63%;
+    background-color: #0099dc;
+    margin-left: 291px;
+    margin-top: 25px;
+}
+
+.top p {
+    padding-left: 32px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    padding-top: 15px;
+}
+
+
+.top h6 {
+    padding-left: 32px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: -18px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+body .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 219px;
+    margin-left: 366px;
+    margin-top: 30px;
+}
+
+body .col-3 {
+    flex: 0 0 19%;
+    max-width: 25%;
+    /*background-color: #f3f3f3;*/
+    height: 258px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+body .col-3:hover {
+    flex: 0 0 19%;
+    max-width: 25%;
+    background-color: #f3f3f3;
+    height: 258px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(150, 142, 150, 1);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(150, 142, 150, 1);
+    box-shadow: 10px 10px 5px -4px rgba(150, 142, 150, 1);
+}
+
+
+body .col-3 h6 {
+    font-size: 17px;
+    margin-left: 14px;
+    margin-top: 15px;
+}
+
+.cardHeading {
+    display: flex;
+    justify-content: left;
+}
+
+body .col-3 a{
+    color: #0099dc;
+    background: none;
+    text-decoration: none;
+}
+body .col-3 a:focus{
+    outline: none;
+}
+
+.cardHeading img {
+    width: 13%;
+}
+
+.cardHeading h6 {
+    font-size: 30px;
+}

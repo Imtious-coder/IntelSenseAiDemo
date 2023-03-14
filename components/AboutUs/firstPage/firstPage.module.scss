@@ -1,0 +1,28 @@
+$mobile: 768px;
+
+.content {
+  background: url("/images/aboutUs/page1.webp") center center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+
+  .title {
+    width: 90%;
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+    @media all and (max-width: $mobile) {
+      font-size: 3.2rem;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.container {
+  // background: url("/images/background-vector.png") center center;
+  background-size: cover;
+  display: none;
+  // background-color: #1a1d2c;
+  // padding-bottom: 10rem;
+}
+
+.line {
+  border-bottom: 2px solid #ccc;
+  width: 90%;
+  margin: auto;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0152d6;
+  margin: auto;
+  padding: 3rem 5.5rem 1.5rem;
+}
+
+.content h4 {
+  text-align: right;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  padding-right: 2rem;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: white;
+  text-align: left;
+}
+
+.carousel {
+  width: 90%;
+  margin: auto;
+  margin-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.slider {
+  color: white;
+  // height: 13rem;
+  padding: 1rem 0rem;
+
+  h1 {
+    font-size: 1.8rem;
+    color: #616161;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #616161;
+  }
+}
+
+.carBody {
+  display: flex;
+  justify-content: center;
+}
+
+.carBody button {
+  font-weight: 600;
+  color: white;
+  // width: 278px;
+  background-color: #0099dc;
+  // margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  // padding: 8px;
+  text-transform: uppercase;
+}
+
+.carBody button:focus {
+  outline: none;
+}
+
+// button[tabindex="0"] {
+//   line-height: 36px !important;
+//   width: auto;
+// }

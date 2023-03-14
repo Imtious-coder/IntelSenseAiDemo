@@ -1,0 +1,82 @@
+$mobile: 768px;
+
+.container {
+  display: none;
+  background: url("/images/Background2.png") center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  @media all and (max-width: $mobile) {
+    height: auto;
+    padding: 6em 0;
+  }
+}
+
+.mainContainer {
+  // width: 100%;
+  position: absolute;
+  bottom: 5rem;
+  color: white;
+  margin-left: 5rem;
+  @media all and (max-width: $mobile) {
+    position: relative;
+    margin: 0;
+    bottom: 0;
+  }
+}
+
+.heading h1 {
+  margin: auto;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: right;
+  @media all and (max-width: $mobile) {
+    width: 80vw;
+    text-align: center;
+    font-size: 3.2em;
+    margin-bottom: 1.5em;
+  }
+}
+
+.mainContainer div {
+  width: 70rem;
+  margin-left: 2rem;
+  @media all and (max-width: $mobile) {
+    width: auto;
+    margin-left: 0;
+  }
+}
+
+.buttom {
+  margin-top: 4rem;
+  text-align: right;
+  @media all and (max-width: $mobile) {
+    text-align: center;
+  }
+}
+
+.buttom button {
+  border: 1px solid #e5ecfc;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 5rem;
+  font-weight: 600;
+}
+
+.buttom button:focus {
+  outline: none;
+}
+
+.contentBody p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: right;
+  @media all and (max-width: $mobile) {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 2em;
+  }
+}

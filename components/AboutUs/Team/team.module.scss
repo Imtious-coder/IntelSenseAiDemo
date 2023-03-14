@@ -1,0 +1,153 @@
+$mobile: 768px;
+
+.wrapper {
+  background-color: #0099dc;
+  color: #fff;
+
+  .line {
+    width: 90%;
+    max-width: 1920px;
+    margin: auto;
+    border-bottom: 1.5px solid #eee;
+    padding: 4rem 0;
+  }
+
+  .mainContent {
+    width: 90%;
+    max-width: 1920px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media all and (max-width: $mobile) {
+      text-align: center;
+    }
+    .heading {
+      p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        @media all and (max-width: $mobile) {
+          font-weight: 200;
+          br {
+            display: none;
+          }
+        }
+      }
+
+      h2 {
+        font-size: 5rem;
+        padding-top: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        @media all and (max-width: $mobile) {
+          font-size: 3.2rem;
+        }
+      }
+    }
+
+    .teams {
+      display: flex;
+      justify-content: center;
+      @media all and (max-width: $mobile) {
+        flex-direction: column;
+      }
+      padding-top: 23px;
+      width: 100%;
+
+      .eachTeam {
+        width: 200px;
+        background-color: #0099dc;
+        margin-right: 36px;
+        color: #1e1f2e;
+        @media all and (max-width: $mobile) {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.eachTeam h6 {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  @media all and (max-width: $mobile) {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.eachTeam img {
+  width: 200px;
+  height: 137px;
+  background-color: #a4a48f;
+  @media all and (max-width: $mobile) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@mixin truncate-text($font-size: 16px, $line-height: 1.4, $lines-to-show: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  position: relative;
+  visibility: visible;
+
+  @supports not (-webkit-line-clamp: $lines-to-show) {
+    display: block;
+    max-height: $font-size * $line-height * $lines-to-show;
+    line-height: $line-height;
+  }
+}
+
+.eachTeam p {
+  font-size: 15px;
+  color: white;
+  // text-align: justify;
+  // height: 400px;
+  @include truncate-text(15, 1.4, 7);
+  @media all and (max-width: $mobile) {
+    text-align: center;
+    small {
+      font-size: 1.8rem;
+      font-weight: 200;
+    }
+  }
+}
+
+.teamLink {
+  margin-top: 2rem;
+  text-align: left;
+  @media all and (max-width: $mobile) {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  a {
+    color: white;
+    background-color: #0152d6;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 2rem;
+    @media all and (max-width: $mobile) {
+      font-size: 1.2rem;
+      padding: 0.5rem 3rem;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #0c46a1;
+      text-decoration: none;
+    }
+  }
+}

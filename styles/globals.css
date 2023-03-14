@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital@0;1&display=swap');
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: local("Montserrat-Regular"),
+    url("/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  src: local("Montserrat-Bold"),
+    url("/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  font-weight: 300;
+  src: local("Montserrat-Light"),
+    url("/fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aktiv";
+  font-weight: 700;
+  src: url("/fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aktiv";
+  font-weight: 400;
+  src: url("/fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aktiv";
+  font-weight: 500;
+  src: url("/fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aktiv";
+  font-weight: 500;
+  src: url("/fonts/AktivGroteskCorp-Light.ttf") format("truetype");
+}
+
+.openSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+
+.rec-pagination {
+  display: none !important;
+}
+
+#nprogress .bar {
+  background: #ffbb00 !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #ffbb00, 0 0 5px #ffbb00;
+}
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img {
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.card-img-container {
+  height: 250px;
+  aspect-ratio: 1/1;
+  background-color: #f8f8f8;
+}
+
+.montserrat-bold {
+  font-family: 'Montserrat-Bold'
+}

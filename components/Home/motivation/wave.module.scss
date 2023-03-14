@@ -1,0 +1,75 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0099dc;
+  font-size: 4rem;
+  padding-top: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+$mobile: 768px;
+
+.wrapper {
+  background-color: #0099dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+
+  .bg {
+    background-image: url("/images/explore_waves.png");
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    // justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 1.5rem 8rem;
+      font-family: Montserrat;
+      font-size: 1.4rem;
+      font-weight: 700;
+      border: 0px;
+      cursor: pointer;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 4rem;
+      color: white;
+    }
+
+    p {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      color: white;
+      text-align: center;
+    }
+
+    @media all and (max-width: $mobile) {
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      h2, p {
+        background-color: transparent;
+      }
+      background: none;
+    }
+  }
+}
